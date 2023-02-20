@@ -1,0 +1,142 @@
+/*
+Name: Tanish Parlapall
+Date: 10/13/20
+*/
+
+
+h1 {
+  color: #4a4a4a;
+  font: cursive;
+}
+/* This is for the title of my shop, "SOCKS FOR EVERYONE". It sets the font style(cursive) and the color of the leters(black)*/
+
+
+body {
+
+  background-color: aquamarine
+}
+/*I needed this because I didn't have a background color and there were some messy white areas/*/
+.container {
+  display: grid;
+  max-height: 1500px;
+  grid-template-rows:  repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  background-color: aquamarine;
+  grid-gap: 50px;
+	justify-content: center;
+}
+/*this makes the grid, grid gap, and alignment. It also sets the color of the grids*/
+.title {
+  font-size: 30px;
+  font-family: "Tenor Sans";
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  justify-self: center;
+  color: #08163d;
+}
+/*Sets the title to be in certain fonts and sizes.  Also describes its alignment, and position*/
+
+.image {
+  justify-self: center;
+  min-width: 50%;
+  min-height: 50%;
+  max-width: 100%;
+  max-height: 100%;
+	grid-gap: 20px;
+	
+}
+/*This is for the image. This is for alignment, size, and grid gap, */
+
+.caption {
+  justify-self: center;
+  font-family: cursive;
+  color: black;
+  margin: 18px;
+  padding: 8px;
+}
+/*This is the caption part, it chooses font, color, margin, alignment, and padding*/
+
+.image#bsocks {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+	 margin: 18px;
+  padding: 8px;
+	grid-gap: 40px;
+}
+/*This puts the image in a specific row/column and sets it's padding and grid gap.*/
+p{
+
+  font-family: cursive;
+  color: black;
+}
+/*this makes the product names a specific font and color*/
+
+.price2{
+	grid-row-start: 2;
+  grid-row-end: 3;
+	grid-column-start: 3;
+  grid-column-end: 4;
+	color: black;
+}
+/*sets elements for the price of christmas socks*/
+.caption#bsocks {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.image#blacksocks {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+/*sets the positioning of the black socks.*/
+.caption#blacksocks {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+/* caption for black socks*/
+.price1{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 3;
+  grid-column-end: 4;
+	color: black;
+}
+/* this is for the price of the dino*/
+.caption#dinosocks {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.image#dinosocks{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+	 margin: 18px;
+}
+/* this sets the elements of the button*/
+.price3{
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 3;
+  grid-column-end: 4;
+	color: black;
+}
+/*sets the elements for the price of black socks*/
+.footer {
+  grid-row-start: 5;
+  justify-self: center;
+  justify-content: center;
+  background-color:aquamarine;
+}
+/* this sets the footer and it's elements(color and alignment)*/
